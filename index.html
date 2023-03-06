@@ -24,7 +24,7 @@
 
 				<p id="demo"></p>
 				<script>
-				var countDownDate = new Date("Apr 5, 2023 23:59:59").getTime();
+				var countDownDate = new Date("Apr 5, 2023 20:00:00").getTime();
 				var x = setInterval(function() {
 					var now = new Date().getTime();
     				var distance = countDownDate - now;
@@ -36,7 +36,7 @@
   					+ minutes + "m " + seconds + "s ";
   					if (distance < 0) {
 				    	clearInterval(x);
-				    	document.getElementById("demo").innerHTML = "EXPIRED";
+				    	document.getElementById("demo").innerHTML = "START";
   					}
 				}, 1000);
 				</script>				
